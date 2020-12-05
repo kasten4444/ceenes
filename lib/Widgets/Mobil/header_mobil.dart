@@ -45,20 +45,18 @@ class HeaderMobilState extends State<HeaderMobil> {
   Widget build(BuildContext context) {
     return Container(
       color: my_dark_sec,
+      height: 60,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Padding(
-            padding: const EdgeInsets.all(15),
-            child: Container(
-              child: FlatButton(
-                child: Image.asset(icon_pink),
-                onPressed: () {
-                  html.window.location.reload();
-                },
-              ),
-              height: 40,
+          Container(
+            child: FlatButton(
+              child: Image.asset(icon_pink),
+              onPressed: () {
+                html.window.location.reload();
+              },
             ),
+            height: 30,
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -74,88 +72,29 @@ class HeaderMobilState extends State<HeaderMobil> {
           ),
           Row(
             children: [
-              ConstrainedBox(
-                constraints: BoxConstraints(
-                  maxWidth: 40
+              IconButton(
+                //height: 30,
+                icon: Icon(
+                  Icons.mail,
+                  color: Colors.white,
+                  //size: 30,
                 ),
-                child: FlatButton(
-                  height: 30,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(30.0)),
-                  color: my_pink,
-                  onPressed: () {
-                    showDialog(
-                      context: context,
-                      builder: (BuildContext context) {
-                        return AlertDialog(
-                          backgroundColor: my_dark_sec,
-                          content: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Text(
-                                  "Klicke auf das Email Icon, um uns eine Mail zu schreiben:",
-                                  style: TextStyle(
-                                      color: Colors.white, fontSize: 20),
-                                ),
-                              ),
-                              Center(
-                                child: FlatButton(
-                                  child: Icon(
-                                    Icons.email_rounded,
-                                    color: my_pink,
-                                    size: 50,
-                                  ),
-                                  onPressed: () {
-                                    launchMailto();
-                                  },
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Text(
-                                  "Sollte sich kurz danach nicht dein Emailprogramm öffnen,\nschreib uns manuell eine Mail an\:",
-                                  style: TextStyle(
-                                      color: Colors.white, fontSize: 20),
-                                ),
-                              ),
-                              Center(
-                                child: SelectableText(
-                                  "ceenes.app@gmail.com",
-                                  style: TextStyle(color: my_pink, fontSize: 20),
-                                ),
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Text(
-                                  "Wir freuen uns von dir zu hören und melden uns\numgehend bei dir zurück.",
-                                  style: TextStyle(
-                                      color: Colors.white, fontSize: 20),
-                                ),
-                              ),
-                            ],
-                          ),
-                        );
-                      },
-                    );
-                  },
-                  child: Icon(
-                    Icons.mail,
-                    color: Colors.white,
-                  ),
-                ),
+                iconSize: 30,
+                color: my_pink,
+                onPressed: () {
+                  launchMailto();
+                },
               ),
               SizedBox(
-                width: 8,
+                width: 2,
               ),
               GestureDetector(
+
                   onTap: _launchIG,
                   child: Image.asset(
                     ig,
                     color: Colors.white,
-                    height: 30,
+                    height: 25,
                   ))
             ],
           ),
