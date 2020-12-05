@@ -62,7 +62,19 @@ class _MyAppState extends State<MyApp> {
     // Show a loader until FlutterFire is initialized
     if (!_initialized) {
       return Container(
-        child: CircularProgressIndicator(),
+        color: my_dark_grey,
+        child: Center(
+          child: Column(
+            children: [
+              CircularProgressIndicator(),
+              Text(
+                'When you are seeing this, please refresh this site manually.\n'
+                'The connection to our database could not be established. ',
+                style: TextStyle(color: Colors.white),
+              )
+            ],
+          ),
+        ),
       );
     }
 
@@ -73,10 +85,9 @@ class _MyAppState extends State<MyApp> {
       routes: {
         '/home': (context) => MyHomePage(),
         '/v1': (context) => null,
-        '/v2': (context) =>  null,
+        '/v2': (context) => null,
         '/privacy_policy': (context) => PrivacyPolicy_Route(),
         '/privacy_policy_tablet': (context) => PrivacyPolicy_Route_Tablet()
-
       },
     );
   }
