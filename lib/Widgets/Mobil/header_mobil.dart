@@ -47,7 +47,7 @@ class HeaderMobilState extends State<HeaderMobil> {
       color: my_dark_sec,
       height: 60,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Container(
             child: FlatButton(
@@ -88,14 +88,10 @@ class HeaderMobilState extends State<HeaderMobil> {
               SizedBox(
                 width: 2,
               ),
-              GestureDetector(
-
-                  onTap: _launchIG,
-                  child: Image.asset(
-                    ig,
-                    color: Colors.white,
-                    height: 25,
-                  ))
+              IconButton(
+                icon: Image.asset(ig, color: Colors.white, height: 25,),
+                onPressed: _launchIG,
+              ),
             ],
           ),
         ],

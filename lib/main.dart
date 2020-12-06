@@ -4,6 +4,7 @@ import 'package:ceenes/assets/Styles/Colors/colors.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'dart:html' as html;
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -61,18 +62,29 @@ class _MyAppState extends State<MyApp> {
 
     // Show a loader until FlutterFire is initialized
     if (!_initialized) {
-      return Container(
-        color: my_dark_grey,
-        child: Center(
-          child: Column(
-            children: [
-              CircularProgressIndicator(),
-              Text(
-                'When you are seeing this, please refresh this site manually.\n'
-                'The connection to our database could not be established. ',
-                style: TextStyle(color: Colors.white),
-              )
-            ],
+      return Material(
+        child: Directionality(
+          textDirection: TextDirection.ltr,
+          child: Container(
+            color: my_dark_grey,
+            child: Center(
+              child: Column(
+                children: [
+                  CircularProgressIndicator(),
+                  Text(
+                    'Solltest du diese Meldung hier sehen, aktualisiere bitte die Seite um auf ceenes.com zu gelangen hier:\n',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  IconButton(
+
+                    icon: Icon(Icons.refresh, color: my_pink),
+                    onPressed: () {
+                      html.window.location.reload();
+                    },
+                  )
+                ],
+              ),
+            ),
           ),
         ),
       );
