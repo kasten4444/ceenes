@@ -31,7 +31,6 @@ class _BodyTabletState extends State<BodyTablet> {
 
   var col = [
     Row1_Tablet(),
-
     Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
@@ -77,17 +76,22 @@ class _BodyTabletState extends State<BodyTablet> {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: my_dark_grey,
-      child: Container(
-        child: ScrollablePositionedList.builder(
-          itemCount: col.length,
-          itemBuilder: (context, index) {
-            return col[index];
-          },
-          itemScrollController: itemScrollController,
-          itemPositionsListener: itemPositionsListener,
+    return GestureDetector(
+      onTap: (){
+        FocusScope.of(context).requestFocus(new FocusNode());
+      },
+      child: Material(
+        color: my_dark_grey,
+        child: Container(
+          child: ScrollablePositionedList.builder(
+            itemCount: col.length,
+            itemBuilder: (context, index) {
+              return col[index];
+            },
+            itemScrollController: itemScrollController,
+            itemPositionsListener: itemPositionsListener,
 
+          ),
         ),
       ),
     );

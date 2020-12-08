@@ -58,16 +58,21 @@ class _BodyMobilState extends State<BodyMobil> {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: my_dark_grey,
-      child: Container(
-        child: ScrollablePositionedList.builder(
-          itemCount: col.length,
-          itemBuilder: (context, index) {
-            return col[index];
-          },
-          itemScrollController: itemScrollController,
-          itemPositionsListener: itemPositionsListener,
+    return GestureDetector(
+      onTap: (){
+        FocusScope.of(context).requestFocus(new FocusNode());
+      },
+      child: Material(
+        color: my_dark_grey,
+        child: Container(
+          child: ScrollablePositionedList.builder(
+            itemCount: col.length,
+            itemBuilder: (context, index) {
+              return col[index];
+            },
+            itemScrollController: itemScrollController,
+            itemPositionsListener: itemPositionsListener,
+          ),
         ),
       ),
     );
