@@ -59,7 +59,7 @@ class PrivacyPolicy_Route_Tablet extends StatelessWidget {
                         ),
                         Text(
                           'Datenschutzerklärung',
-                          style: TextStyle(color: Colors.white, fontSize: 40),
+                          style: TextStyle(color: Colors.white, fontSize: 30),
                         )
                       ],
                     ),

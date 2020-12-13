@@ -1,11 +1,11 @@
 {
     "name": "ceenes",
     "short_name": "ceenes",
-    "start_url": ".",
+    "start_url": "https://ceenes.com",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Mit Ceenes findet ihr gemeinsam den perfekten Film für euren Filmabend!",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

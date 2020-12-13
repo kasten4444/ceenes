@@ -85,7 +85,7 @@ class _Part1State extends State<Part1> {
                 child: Container(
                     padding: EdgeInsets.only(left: 20),
                     child: SelectableText(
-                      'Wir haben es uns zur Aufgabe gemacht, dass du mit deinen Freunden in 2 Minuten den perfekte Film/Serie findest. Begib dich als Erste/er auf unser Abenteuer!',
+                      'Wir haben es uns zur Aufgabe gemacht, dass du mit deinen Freunden in 2 Minuten den perfekte Filmer oder die perfekte Serie findest. Gehöre zu den Ersten, die mit uns dieses Abenteuer beginnen!',
                       style: TextStyle(
                         fontSize: 20,
                         decoration: TextDecoration.none,
@@ -194,7 +194,7 @@ class _Part1State extends State<Part1> {
                         if (_formKey.currentState.validate()) {
                           firestore.collection("emails").add({"email": email});
                           Toast.show(
-                            "Du wurdest erfolgreich hinzugefügt",
+                            "Danke! Du wurdest erfolgreich hinzugefügt",
                             context,
                             duration: 2,
                             gravity: Toast.TOP,

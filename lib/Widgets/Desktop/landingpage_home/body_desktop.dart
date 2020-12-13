@@ -20,7 +20,8 @@ class BodyDesktop extends StatefulWidget {
 }
 
 final ItemScrollController itemScrollController = ItemScrollController();
-final ItemPositionsListener itemPositionsListener = ItemPositionsListener.create();
+final ItemPositionsListener itemPositionsListener =
+    ItemPositionsListener.create();
 
 class BodyDesktopState extends State<BodyDesktop> {
   var col = [
@@ -40,9 +41,13 @@ class BodyDesktopState extends State<BodyDesktop> {
           children: [
             Text(
               'So funktioniert\'s',
-              style: TextStyle(color: Colors.white, fontSize: 25),
+              style: TextStyle(color: Colors.white, fontSize: 22),
             ),
-            Icon(Icons.arrow_downward, color: Colors.white, size: 40,),
+            Icon(
+              Icons.arrow_downward,
+              color: Colors.white,
+              size: 40,
+            ),
           ],
         ),
       ),
