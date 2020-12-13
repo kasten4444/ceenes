@@ -1,7 +1,7 @@
 {
-    "name": "ceenes",
-    "short_name": "ceenes",
-    "start_url": "https://ceenes.com",
+    "name": "Ceenes",
+    "short_name": "Ceenes",
+    "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
