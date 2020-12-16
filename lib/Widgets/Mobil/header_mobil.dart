@@ -64,10 +64,10 @@ class HeaderMobilState extends State<HeaderMobil> {
               'CEENES',
               style: TextStyle(
                   color: Colors.white,
-                  fontFamily: 'Segoe',
-                  fontSize: 25,
+                  //fontFamily: 'Segoe',
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  letterSpacing: 8),
+                  letterSpacing: 5),
             ),
           ),
           Row(
@@ -86,7 +86,7 @@ class HeaderMobilState extends State<HeaderMobil> {
                 },
               ),
               SizedBox(
-                width: 2,
+                width: 1,
               ),
               IconButton(
                 icon: Image.asset(ig, color: Colors.white, height: 25,),

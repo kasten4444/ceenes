@@ -26,7 +26,6 @@ class _BodyMobilState extends State<BodyMobil> {
   var col = [
 
     Part1(),
-
     Container(
       //color: Colors.blue,
       child: GestureDetector(
@@ -42,9 +41,9 @@ class _BodyMobilState extends State<BodyMobil> {
           children: [
             Text(
               'So funktioniert\'s',
-              style: TextStyle(color: Colors.white, fontSize: 20),
+              style: TextStyle(color: Colors.white, fontSize: 15),
             ),
-            Icon(Icons.arrow_downward, color: Colors.white, size: 35,),
+            Icon(Icons.arrow_downward, color: Colors.white, size: 25,),
           ],
         ),
       ),
