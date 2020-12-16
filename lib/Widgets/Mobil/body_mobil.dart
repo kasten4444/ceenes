@@ -41,7 +41,7 @@ class _BodyMobilState extends State<BodyMobil> {
           children: [
             Text(
               'So funktioniert\'s',
-              style: TextStyle(color: Colors.white, fontSize: 15),
+              style: TextStyle(color: Colors.white, fontSize: 18),
             ),
             Icon(Icons.arrow_downward, color: Colors.white, size: 25,),
           ],
