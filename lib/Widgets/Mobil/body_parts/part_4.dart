@@ -37,7 +37,8 @@ class Part4 extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.only(left:50, top:50, right:50),
                 child: SelectableText(
-                        'Nachdem alle mit dem Swipen fertig sind, schaut ihr euch gemeinsam euer Ranking der Filme an. Ihr wisst jetzt, was ihr gucken könnt.',
+                  'Nachdem ihr alle mit dem Swipen fertig seid, schaut ihr euch gemeinsam das Ranking eurer Filme an.'
+                      ' Ihr wisst jetzt, was ihr gucken könnt',
                         style: TextStyle(
                           fontSize: 17,
                           decoration: TextDecoration.none,

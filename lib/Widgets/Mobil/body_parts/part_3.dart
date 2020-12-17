@@ -37,7 +37,9 @@ class Part3 extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(50),
                 child: SelectableText(
-                        'Jeder deiner Freunde hat nun einen Link bekommen und kann anfangen zu swipen. Bewerte jeden Film, sodass ihr am Ende ein Ranking habt. Worauf wartet ihr noch?',
+                  'Ihr habt jetzt alle einen Link bekommen und könnt anfangen zu swipen. Bewerte jeden '
+                'Film. Gefällt er dir, dann gibt ihm einen Like und swipe nach rechts. '
+                  'Ansonsten swipe nach links. Worauf wartet ihr noch?',
                         style: TextStyle(
                           fontSize: 17,
                           decoration: TextDecoration.none,

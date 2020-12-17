@@ -79,7 +79,7 @@ class _Row1State extends State<Row1> {
                             height: 30,
                           ),
                           AutoSizeText(
-                            'Wir haben es uns zur Aufgabe gemacht, dass du mit deinen Freunden in 2 Minuten den perfekte Filmer oder die perfekte Serie findest. Gehöre zu den Ersten, die mit uns dieses Abenteuer beginnen!',
+                            'Wir haben es uns zur Aufgabe gemacht, dass du mit deinen Freunden in 2 Minuten den perfekten Film oder die perfekte Serie findest. Gehöre zu den Ersten, die mit uns dieses Abenteuer beginnen!',
                             style: TextStyle(
                               fontSize: 20,
                               decoration: TextDecoration.none,

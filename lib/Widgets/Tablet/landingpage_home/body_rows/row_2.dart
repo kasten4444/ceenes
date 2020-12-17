@@ -37,9 +37,8 @@ class Row2_Tablet extends StatelessWidget {
                     ),
                     SelectableText(
                       'Erstell eine Gruppe und lade deine Freunde ein. Lass alle Möglichkeiten '
-                          'offen oder triff weitere Filter. Nutze den QR Code oder den Link um '
-                          'deine Freunde'
-                          'einzuladen.',
+                          'offen oder filter nach deinen Vorlieben. Logge dich mit dem Code ein um '
+                          'teilzunehmen!',
                       style: TextStyle(
                         fontSize: 20,
                         decoration: TextDecoration.none,

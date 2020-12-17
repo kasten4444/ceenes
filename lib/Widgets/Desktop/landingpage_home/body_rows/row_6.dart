@@ -59,31 +59,18 @@ class _Row6State extends State<Row6> {
                   ),
                   ConstrainedBox(
                     constraints: BoxConstraints(maxWidth: 800),
-                    child: SelectableText.rich(
-                      TextSpan(
-                          text:
-                              'Wir sind zwei Wirtschaftsinformatikstudenten der Universität Paderborn. '
-                              'Wir wollen mit diesem Projekt den Freiraum, den uns die der Lehrstuhl für Digitale Märkte '
-                              'anbietet, nutzen, und unserer Kreativität freien Lauf lassen.\n'
-                              'Deshalb danken wir insbesondere Frau Seutter und Herrn Kundisch, die uns tatkräfitg zur Seite stehen '
-                              'und bei der Umsetzung dieses Projekt unterstützen.\n'
-                              'Für Kontaktanfragen sendet uns bitte eine Mail an ',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              decoration: TextDecoration.none,
-                              fontFamily: 'Segoe'),
-                          children: [
-                            TextSpan(
-                              text: 'ceenes.app@gmail.com',
-                              style: TextStyle(
-                                  color: my_pink,
-                                  fontSize: 20,
-                                  decoration: TextDecoration.none,
-                                  fontFamily: 'Segoe'),
-                            )
-                          ]),
-                    ),
+                    child: SelectableText(
+                        'Wir sind zwei Wirtschaftsinformatikstudenten der Universität Paderborn. '
+                            'Ceenes enstand im Rahmen des Innovative Ideas Seminar am Lehrstuhl für Wirtschaftsinformatik, '
+                            'insb. Digitale Märkte. \nBesonders danken wir Frau Seutter und Herrn Kundisch, die '
+                            'uns beratend zur Seite stehen. Mit Kreativität und unseren Skills wollen wir Ceenes weiter voran '
+                            'treiben.',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            decoration: TextDecoration.none,
+                            fontFamily: 'Segoe')
+                    )
                   ),
                   SizedBox(height: 20),
                   Padding(
