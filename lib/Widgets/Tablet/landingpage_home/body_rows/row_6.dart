@@ -66,9 +66,10 @@ class _Row6_TabletState extends State<Row6_Tablet> {
                       child: SelectableText(
                           'Wir sind zwei Wirtschaftsinformatikstudenten der Universität Paderborn. '
                               'Ceenes enstand im Rahmen des Innovative Ideas Seminar am Lehrstuhl für Wirtschaftsinformatik, '
-                              'insb. Digitale Märkte. \nBesonders danken wir Frau Seutter und Herrn Kundisch, die '
+                              'insb. Digitale Märkte. Besonders danken wir Frau Seutter und Herrn Kundisch, die '
                               'uns beratend zur Seite stehen. Mit Kreativität und unseren Skills wollen wir Ceenes weiter voran '
                               'treiben.',
+                          textAlign: TextAlign.center,
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 20,

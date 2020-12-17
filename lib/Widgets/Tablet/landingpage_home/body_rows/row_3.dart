@@ -54,6 +54,8 @@ class Row3_Tablet extends StatelessWidget {
                       'Ihr habt jetzt alle einen Link bekommen und könnt anfangen zu swipen. Bewerte jeden '
                           'Film. Gefällt er dir, dann gibt ihm einen Like und swipe nach rechts. '
                           'Ansonsten swipe nach links. Worauf wartet ihr noch?',
+                      textAlign: TextAlign.center,
+
                       style: TextStyle(
                         fontSize: 20,
                         decoration: TextDecoration.none,

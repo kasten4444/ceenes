@@ -39,6 +39,8 @@ class Row2_Tablet extends StatelessWidget {
                       'Erstell eine Gruppe und lade deine Freunde ein. Lass alle Möglichkeiten '
                           'offen oder filter nach deinen Vorlieben. Logge dich mit dem Code ein um '
                           'teilzunehmen!',
+                      textAlign: TextAlign.center,
+
                       style: TextStyle(
                         fontSize: 20,
                         decoration: TextDecoration.none,

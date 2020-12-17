@@ -62,9 +62,11 @@ class _Row5_TabletState extends State<Row5_Tablet> {
                       child: Container(
                           child: SelectableText(
                         'Unsere Web-App ist ständig im Umbruch und wir benötigen deine Hilfe, um unsere Features zu testen.'
-                        ' Hinterlasse hier deine E-Mail Adresse, um zun den ertsen Usern gehören zu können. Damit hilfst'
+                        ' Hinterlasse hier deine E-Mail Adresse, um zun den Ersteh zu gehören. Damit hilfst'
                         ' du uns beim Testen un der Entwicklung neuer Features. Wir freuen uns von dir zu hören.',
-                        style: TextStyle(
+                            textAlign: TextAlign.center,
+
+                            style: TextStyle(
                           fontSize: 20,
                           decoration: TextDecoration.none,
                           color: Colors.white,

@@ -67,9 +67,11 @@ class _Part5State extends State<Part5> {
                       child: Container(
                           child: SelectableText(
                         'Unsere Web-App ist ständig im Umbruch und wir benötigen deine Hilfe, um unsere Features zu testen.'
-                        ' Hinterlasse hier deine E-Mail Adresse, um zun den ertsen Usern gehören zu können. Damit hilfst'
-                        ' du uns beim Testen un der Entwicklung neuer Features. Wir freuen uns von dir zu hören.',
-                        style: TextStyle(
+                            ' Hinterlasse hier deine E-Mail Adresse, um zun den Ersteh zu gehören. Damit hilfst'
+                            ' du uns beim Testen un der Entwicklung neuer Features. Wir freuen uns von dir zu hören..',
+                            textAlign: TextAlign.center,
+
+                            style: TextStyle(
                           fontSize: 17,
                           decoration: TextDecoration.none,
                           color: Colors.white,

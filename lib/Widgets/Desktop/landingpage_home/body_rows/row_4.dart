@@ -37,7 +37,7 @@ class Row4 extends StatelessWidget {
                       ),
                       SelectableText(
                         'Nachdem ihr alle mit dem Swipen fertig seid, schaut ihr euch gemeinsam das Ranking eurer Filme an.'
-                            ' Ihr wisst jetzt, was ihr gucken könnt',
+                            ' Ihr wisst jetzt, was ihr gucken könnt.',
                         style: TextStyle(
                           fontSize: 20,
                           decoration: TextDecoration.none,
